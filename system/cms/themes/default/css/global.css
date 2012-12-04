@@ -1,36 +1,39 @@
 /* Let's begin! */
-body { background-color: #e1e1e1; background-image: url(../img/body-bg.jpg); background-repeat: repeat-x; overflow-x: hidden; }
+body { background-color: #e1e1e1; background-image: url(../../../../../assets/img/sitebg.png); background-repeat: repeat; overflow-x: hidden; }
 
 /* Wrappers */
 #pageWrapper { width: 100%; margin: 0 auto; }
 #contentWrapper { background: transparent url(../img/content-bg.jpg) no-repeat top; width: 1000px; min-height: 500px; margin: 0 auto; }
 
 /* Header */
-#pageWrapper > header { background-image: url(../img/header-bg.jpg); background-repeat: no-repeat; width: 1000px; height: 138px; margin: 0 auto; padding: 0; }
+#pageWrapper > header { background-image: url(../../../../../assets/img/header_bg.png);  height: 138px; margin: 0 auto; padding: 0; }
 
 /* Logo */
-header #logo { margin: 45px 0 0 0; float: left; }
-header #logo h1 { font-size: 32px; }
+header #logo { margin: 10px 0 0 3px; float: left; background: url(../../../../../assets/img/logo.png); background-repeat: no-repeat; width: 305px; height: 105px;}
+header #logo h1 { font-size: 32px; text-indent: -9999px;}
 header #logo h1 a { color: #ffffff; }
 header #logo h2 { font-size: 12px; color: #59626e; letter-spacing: 0.5px; float: right; }
 
 /* User meta */
-header #user-meta { font-family:  Tahoma, "Helvetica Neue", Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #ffffff; letter-spacing: 0.5px; line-height: 1.5em; text-shadow: 1px 1px 0px #000000; margin: 45px 0 0 0; float: right; }
-header #user-meta a, #header #user-meta a:link { color: #7b818c; text-shadow: 1px 1px 0px #3e444d; }
+header #user-meta { font-family:  Tahoma, "Helvetica Neue", Helvetica, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: 0.5px; line-height: 1.5em; margin: 4px 0 0 0; float: right; color: #000;}
+header #user-meta a, #header #user-meta a:link { color: #7b818c; }
 header #user-meta a:hover { color: #ff6900; text-shadow: 1px 1px 0px #3e444d; }
 header #user-meta .nav-splitter { color: #060a14; text-shadow: 1px 1px 0px #3e444d; }
 header #user-meta .avatar-name { display: inline-block; vertical-align: middle; }
 header #user-meta .avatar-name img { display: inline-block; vertical-align: middle; margin-right: 3px; border: 1px solid #7b818c; }
 header #user-meta .avatar-name a:hover img { border: 1px solid #ff6900; }
 
-header #user-meta form {  margin: 0; padding: 0; float: right; }
-header #user-meta form ul li { margin: 0 0 0 5px; list-style: none; float: left; display: inline;}
+header #user-meta form {  margin: 0 10px 0 0; padding: 0; float: right; }
+header #user-meta form ul li { padding-bottom: 0; margin: 0 0 0 5px; list-style: none; display: inline; float: left;}
+header #user-meta form ul li ul li {float: none; display: block;}
 header #user-meta form ul li input { font-family:  Tahoma, "Helvetica Neue", Helvetica, sans-serif; font-weight: bold; color: #59626e; font-size: 11px; letter-spacing: 0.5px; background-color: #202328; border: 1px solid #2e3138; border-radius: 3px; -o-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; padding: 7px 0 7px 6px; }
 header #user-meta form ul li.form-buttons { margin: 4px 0px 0px 10px; float: right; }
+header #user-meta form ul li.form-buttons label { display:block; float:none; }
 header #user-meta form ul li input[type=submit] { padding: 0; font-family:  Tahoma, "Helvetica Neue", Helvetica, sans-serif; font-weight: bold; font-size: 11px; color: #ff6900; background: none; border: none; cursor: pointer; outline: none; }
 header #user-meta form ul li input[type=submit]:hover { color: #060a14; text-shadow: 1px 1px 0px #3e444d; }
 
 /* Header Menu */
+nav { height:80px; background-image: url(../../../../../assets/img/navbg.png);}
 nav ul#head-nav { width: 1000px; height: 35px; padding: 14px 0 2px 0; margin: 0 auto; }
 nav ul#head-nav ul { height: 0; left: 0; position: absolute; top: 18px; padding-top: 20px; visibility: hidden; width: 149px; z-index: 1000; }
 nav ul#head-nav li { position: relative; list-style: none; margin: 0 35px 0 0; padding: 0; float: left; }

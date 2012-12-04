@@ -3,7 +3,7 @@
 	<!-- Begin logo -->
 	<div id="logo">
 		<h1><a href="{{ url:site  }}" title="Home">{{ settings:site_name }}</a></h1>
-		<h2 class="slogan">{{ settings:site_slogan }}</h2>
+		<!--<h2 class="slogan">{{ settings:site_slogan }}</h2>-->
 	</div>
 	<!-- End logo -->
 
@@ -35,12 +35,16 @@
 		<form action="{{ url:site uri='users/login' }}" method="post" accept-charset="utf-8" id="login-small">
 			<input type="hidden" name="redirect_to" value="{{ url:current }}" />
 			<ul>
-				<li class="email">
-					<input type="text" id="email" name="email" maxlength="120" placeholder="{{ helper:lang line="user_email" }}" />
-				</li>
-
-				<li class="pword">
-					<input type="password" id="password" name="password" maxlength="20" placeholder="{{ helper:lang line="user_password" }}" />
+				<li>
+					<ul class="loginFloat">
+						<li class="email">
+							<input type="text" id="email" name="email" maxlength="120" placeholder="{{ helper:lang line="user_email" }}" />
+						</li>
+		
+						<li class="pword">
+							<input type="password" id="password" name="password" maxlength="20" placeholder="{{ helper:lang line="user_password" }}" />
+						</li>
+					</ul>
 				</li>
 
 				<li class="form-buttons">
